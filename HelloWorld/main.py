@@ -2,8 +2,9 @@
 # filename: main.py
 import web
 import os
-root = os.path.dirname(__file__) 
-render = web.template.render(os.path.join(root, '3dSpin/'), cache=False)
+root = os.path.dirname(__file__)
+path = os.path.join(root, '3dSpin/')
+render = web.template.render(path, cache=False)
 urls = (
     '/wx', 'Handle',
 )
